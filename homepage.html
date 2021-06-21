@@ -1,0 +1,90 @@
+<!-- LIZ WONG WAN QI 20DDT19F1019 DDT4A -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pratical test</title>
+        <link href="homepage.css" rel="stylesheet">
+        
+        <script >
+            window.alert("Welcome To rahsia kambing!!");
+            
+          </script>
+
+        <script>
+            // Get all elements with class="closebtn"
+            var close = document.getElementsByClassName("closebtn");
+            var i;
+
+            // Loop through all close buttons
+            for (i = 0; i < close.length; i++) {
+            // When someone clicks on a close button
+            close[i].onclick = function(){
+
+               // Get the parent of <span class="closebtn"> (<div class="alert">)
+               var div = this.parentElement;
+
+               // Set the opacity of div to 0 (transparent)
+               div.style.opacity = "0";
+
+               // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+               setTimeout(function(){ div.style.display = "none"; }, 600);
+            }
+            }
+            </script>
+       
+    </head>
+
+    <body>
+        
+        <div class="topnav">
+            <a class="active" href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="cheer.html">Cheer us</a>
+
+        </div>
+
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Hello welcome to this website, click to <a href="cheer.html"> this link  </a>  to cheer us up
+          </div>
+
+          
+
+        <div class="page">
+            <img src="img/bar.jpg" width="100%" >
+            <br>
+            <br>
+            <br>
+            <div class="content">
+                <h1>"Berminat Menternak Kambing?"</h1>
+                <font color="blue" size="50px"><p>Ketahui... Bagaimana Cara Memulakan Penternakan Kambing Yang Betul Dengan Kos Yang 
+                    Rendah! Tanpa Perlu Membuat Sebarang Pinjaman!.</p></font>
+               
+                <div class="form 1">
+                    <h3>So let's write!</h3>
+                    <p>Masukkan Nama & Email anda dibawah untuk menerima tips-tips berkaitan penternakan kambing secara PERCUMA!.</p>
+                   
+                        <form>
+                            <label for="fname">Nama panggilan:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">e-mail:</label><br>
+                            <input type="email" id="lname" name="lname"><br><br>
+                            <button><H4><font>Hantar</font></H4></button>
+                          </form>
+                   
+                </div>
+                <br>
+                <br>
+                <p>Dari student politeknik mukah sarawak</p>
+                <p>Isnin, 2021-6-21</p>
+                <br>
+                <br>
+
+                <br>
+                <br>
+
+            </div>
+        </div>
+    </body>
+</html>
